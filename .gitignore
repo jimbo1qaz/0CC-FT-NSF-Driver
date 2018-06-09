@@ -7,3 +7,5 @@ music.asm
 music.bin
 samples.bin
 music_nsf_map.txt
+
+build/drivers/*
