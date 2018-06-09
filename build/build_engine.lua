@@ -137,10 +137,10 @@ for _, v in pairs {"2A03", "VRC6", "VRC7", "FDS", "MMC5", "N163", "S5B", "ALL"} 
   build(v)
 end
 
-os.execute("rmdir /S /Q ..\\..\\famitracker\\Source\\drivers >nul")
-os.execute("move drivers ..\\..\\famitracker\\Source >nul")
+-- os.execute("rmdir /S /Q ..\\..\\famitracker\\Source\\drivers >nul")
+-- os.execute("move drivers ..\\..\\famitracker\\Source >nul")
 os.remove("c0.cfg")
 os.remove("c1.cfg")
 
 print("All driver headers created in " .. tonumber(os.clock()) .. " seconds.")
-os.execute("pause")
+-- os.execute("pause")
