@@ -37,8 +37,8 @@ ft_update_s5b:
 	ldx #$00
 	stx var_Pul_Noi
 @UpdateNoise:
-	lda var_ch_Trigger + S5B_OFFSET, x
-	beq :+
+	; lda var_ch_Trigger + S5B_OFFSET, x
+	; beq :+	; i think this is skipping noise initialization
 	lda var_ch_DutyCurrent + S5B_OFFSET, x
 	bpl :+									; no noise
 	and #$1F
